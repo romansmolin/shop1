@@ -1,0 +1,111 @@
+.products{
+    position: relative;
+    top:-40px;
+    
+    .grid{
+        grid-template-columns: repeat(5, 1fr);
+        grid-template-rows: 76px 280px 280px 280px 280px;
+        gap: 15px;
+    }
+    
+    &__header{
+        grid-column-start: 1;
+        grid-column-end: 6;
+        background-color: #fff;
+        display:flex;
+        justify-content: flex-end;
+        align-items: center;
+        padding: 31px 20px 33px 0;
+    }
+    
+    &__sidebar{
+        grid-column-start: 1;
+        grid-column-end:2 ;
+        grid-row-start: 2;
+        grid-row-end: 6;
+        padding: 10px;
+    }
+
+    &__btns{
+        display: inline-block;
+        button{
+            width: 76px;
+            height: 28px;
+            background: #fff;
+            border-radius: 4px;
+            font-size: 0.6rem;
+            cursor: pointer;
+            border:none;
+            a{
+                text-decoration: none;
+                color: #1C2F50;
+            }
+        }
+        button:hover{
+            background: #1C2F50;
+            color:#fff;
+            animation-duration: 300s;
+            a{
+                color:#fff;
+            }
+        }
+    }
+
+
+    &__navigation{
+        display: flex;
+        flex-direction: column;
+        height: 370px;
+        justify-content: space-between;
+        h3{
+            margin-bottom: 10px;
+            font-weight: 700;
+            font-size: 0.688rem;
+            color:#1C2F50;
+        }
+        &-list{
+            list-style: none;
+            margin-bottom: 20px;
+            li{
+                a{
+                    text-decoration: none;
+                    color:#1C2F50;
+                    font-size: 0.688rem;
+                    color:#1C2F50;
+                }
+                
+            }
+        }
+
+    }
+    &__item{
+        display: flex;
+        flex-direction: column;
+        &-img{
+            margin-bottom: 5px;
+            img{
+                width: 100%;
+                height: auto;
+            }
+        }
+        &-descr{
+            font-weight: 400;
+            font-size: 0.688rem;
+            line-height: 16px;
+            color: #1C2F50;
+            margin-bottom: 5px;
+        }
+        span{
+            font-weight: 700;
+            font-size: 16px;
+            color: #1C2F50;
+            font-size: 1rem;
+            margin-bottom: 5px;
+        }
+        h3{
+            color:#FD484A;
+            font-size: 0.688rem;
+            font-weight: 400;
+        }
+    }
+}

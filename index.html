@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/stylemin.css">
+    <title>Shoptics</title>
+</head>
+<body>
+    
+    <!-- HEADER -->
+    <header class="header" id="header">       
+            <div class="header__upper">
+                <div class="container">
+                    <div class="header__logo">
+                        <img src="assets/img/logo.png" alt="logo" class="header__img">
+                    </div>
+    
+                    <div class="header__title">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 26 26" fill="none">
+                            <g clip-path="url(#clip0_1206_30)">
+                            <path d="M12.9913 26C12.9057 26 12.8191 25.9794 12.7411 25.9382L0.291409 19.4382C0.112659 19.3451 -7.62939e-06 19.1598 -7.62939e-06 18.9583V6.7708C-7.62939e-06 6.58339 0.0974924 6.40897 0.256742 6.31039C0.415992 6.2118 0.616409 6.20314 0.783242 6.28655L13.2329 12.5157C13.416 12.6078 13.5319 12.7952 13.5319 13V25.4583C13.5319 25.6479 13.4333 25.8234 13.2708 25.922C13.1863 25.974 13.0888 26 12.9913 26ZM1.08333 18.6301L12.4497 24.5646V13.3347L1.08333 7.64722V18.6301Z" fill="#1C2F50"/>
+                            <path d="M13.0087 26C12.9112 26 12.8137 25.974 12.7281 25.922C12.5667 25.8234 12.467 25.6479 12.467 25.4583V13C12.467 12.7952 12.5829 12.6078 12.766 12.5157L25.2157 6.28657C25.3814 6.20207 25.5829 6.21073 25.7422 6.3104C25.9025 6.40898 26 6.5834 26 6.77082V18.9583C26 19.1598 25.8873 19.3451 25.7086 19.4382L13.2589 25.9383C13.1809 25.9794 13.0942 26 13.0087 26ZM13.5503 13.3347V24.5646L24.9167 18.6301V7.64723L13.5503 13.3347ZM25.4583 18.9583H25.4692H25.4583Z" fill="#1C2F50"/>
+                            <mask id="path-3-inside-1_1206_30" fill="white">
+                            <path d="M0.541354 7.31263C0.342021 7.31263 0.151354 7.20321 0.0560211 7.01363C-0.0783122 6.74605 0.0311044 6.42105 0.298688 6.28671L12.7657 0.0575464C12.9184 -0.0182869 13.0983 -0.0182869 13.2499 0.0575464L25.6996 6.28671C25.9672 6.42105 26.0755 6.74605 25.9423 7.01363C25.8079 7.28121 25.484 7.38846 25.2154 7.2563L13.0084 1.14738L0.784021 7.25521C0.706021 7.29421 0.623688 7.31263 0.541354 7.31263Z"/>
+                            </mask>
+                            <path d="M0.541354 7.31263C0.342021 7.31263 0.151354 7.20321 0.0560211 7.01363C-0.0783122 6.74605 0.0311044 6.42105 0.298688 6.28671L12.7657 0.0575464C12.9184 -0.0182869 13.0983 -0.0182869 13.2499 0.0575464L25.6996 6.28671C25.9672 6.42105 26.0755 6.74605 25.9423 7.01363C25.8079 7.28121 25.484 7.38846 25.2154 7.2563L13.0084 1.14738L0.784021 7.25521C0.706021 7.29421 0.623688 7.31263 0.541354 7.31263Z" fill="#1C2F50"/>
+                            <path d="M0.0560211 7.01363L-7.0936 10.6029L-7.09121 10.6077L0.0560211 7.01363ZM0.298688 6.28671L-3.27703 -0.869699L-3.28382 -0.866309L-3.29059 -0.862906L0.298688 6.28671ZM12.7657 0.0575464L9.20832 -7.10801L9.19914 -7.10345L9.18997 -7.09887L12.7657 0.0575464ZM13.2499 0.0575464L16.8296 -7.09688L16.8276 -7.09787L13.2499 0.0575464ZM25.6996 6.28671L29.2889 -0.862912L29.2793 -0.867708L25.6996 6.28671ZM25.9423 7.01363L33.0919 10.6029L33.0977 10.5913L33.1035 10.5797L25.9423 7.01363ZM25.2154 7.2563L21.6351 14.4104L21.6595 14.4227L21.684 14.4347L25.2154 7.2563ZM13.0084 1.14738L16.5886 -6.00677L13.0112 -7.79705L9.43268 -6.00905L13.0084 1.14738ZM0.784021 7.25521L-2.79166 0.0987807L-2.79369 0.0997956L0.784021 7.25521ZM0.541354 -0.68737C3.25259 -0.68737 5.89017 0.808361 7.20325 3.41959L-7.09121 10.6077C-5.58747 13.5981 -2.56855 15.3126 0.541354 15.3126V-0.68737ZM7.20564 3.42435C9.0729 7.1438 7.53049 11.6077 3.88797 13.4363L-3.29059 -0.862906C-7.46828 1.23439 -9.22952 6.34829 -7.0936 10.6029L7.20564 3.42435ZM3.87441 13.4431L16.3414 7.21396L9.18997 -7.09887L-3.27703 -0.869699L3.87441 13.4431ZM16.3231 7.2231C14.2427 8.25588 11.7807 8.26722 9.67223 7.21296L16.8276 -7.09787C14.4158 -8.3038 11.5941 -8.29245 9.20832 -7.10801L16.3231 7.2231ZM9.67024 7.21197L22.1199 13.4411L29.2793 -0.867708L16.8296 -7.09687L9.67024 7.21197ZM22.1103 13.4363C18.4425 11.595 16.9472 7.13008 18.7811 3.44752L33.1035 10.5797C35.2038 6.36201 33.4919 1.2471 29.2889 -0.862906L22.1103 13.4363ZM18.7927 3.42435C20.6477 -0.270829 25.1104 -1.71093 28.7467 0.0778726L21.684 14.4347C25.8576 16.4879 30.9682 14.8333 33.0919 10.6029L18.7927 3.42435ZM28.7956 0.102149L16.5886 -6.00677L9.42811 8.30153L21.6351 14.4104L28.7956 0.102149ZM9.43268 -6.00905L-2.79166 0.098781L4.3597 14.4116L16.584 8.30381L9.43268 -6.00905ZM-2.79369 0.0997956C-1.73557 -0.429261 -0.589709 -0.68737 0.541354 -0.68737V15.3126C1.83708 15.3126 3.14762 15.0177 4.36173 14.4106L-2.79369 0.0997956Z" fill="#1C2F50" mask="url(#path-3-inside-1_1206_30)"/>
+                            <path d="M19.5 16.25C19.201 16.25 18.9584 16.0073 18.9584 15.7083V10.0848L6.80771 4.0051C6.54013 3.87185 6.43179 3.54576 6.56613 3.27818C6.70046 3.0106 7.02546 2.90335 7.29304 3.03551L19.7427 9.26468C19.9258 9.35785 20.0417 9.54526 20.0417 9.75001V15.7083C20.0417 16.0073 19.799 16.25 19.5 16.25Z" fill="#1C2F50"/>
+                            </g>
+                            <defs>
+                            <clipPath id="clip0_1206_30">
+                            <rect width="26" height="26" fill="white"/>
+                            </clipPath>
+                            </defs>
+                        </svg>
+                        <h2>Free shipping on orders over $29.99</h2>
+                        <div class="header__title-learn">Learn more</div>
+                    </div>
+
+                    <div class="header__offer">
+                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="44" height="44" viewBox="0 0 44 44" fill="none">
+                            <rect x="1" y="2" width="39" height="41" fill="url(#pattern0)"/>
+                            <defs>
+                            <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
+                            <use xlink:href="#image0_2_236" transform="translate(-0.00119261) scale(0.0244484 0.0232558)"/>
+                            </pattern>
+                            <image id="image0_2_236" width="41" height="43" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACkAAAArCAYAAADlqKH9AAAE70lEQVRYCcWYaYhcRRCAx3gr4oWIV1Rcr8XdTNdXb5Zxg05Qo3hLWEHEAwURBP2lIqKi/sgPFSUaDzwSFaKJ/pF4QFQUV4gHUfHAAyUgEXHjHV1NPCIVupbO23nz3qw7m4Wleqq7q74+XnV112rb8E9EjgUWAZ8C48DfwJiIvKyqF9dqtVnbEK9WU9XrgF+BzR3+V4UQDtwmoMDCFExVXwJuAK4WkXuBtUn9WzMOqaqnJwDrVPWUPMTAwMDewJLYbkO+vte/ZwGro/NxVW10cgi8Bmzs1Gba61T1OOCfCHlHmYMsy04Efilr11U9cAwwIiKXquplwCWqeoGqnpNl2SGqusCXOoTQLDPebDZ3BaZvT2ZZdjLws0PkpYGLyPlR/xcwW0SuEpHngLtU9ex20CLybDt91zrb/GXhRESuEJHTIuS/jUbjKODm3GAk71xEnsrruv5dBTCCLIx70uPifBE5L4VU1cvzADbTeV1Xv4H5wIbUUYfyC41GY19vr6o3AnsCb3sfEbklBWi1WrsAo6muq7KInOoO3UmJXFSr1bYDPrN2qvqKOQwh9Mcj0XQPpRBz5sw5CPgq1VUuTwFwcwjhJHMArIyDGRscHNzddKr6btStTCGsj01EqqtUjoC/lcya77sJ6SeLfUDWV0TeseU0p8Aa16UQwE2WdKS60nKWZccDP3ULaO1V9W53YOFqaGhof/sdv/Lfo83P+/v7d/J2IvJ6VyeOqg4D308FMPaxY3CBA5g00AjiM/5dvV7fy+rq9fphwJ8We9M+hWVgLvDD/wB0CJO2J28D7ge+ztncMDQ0dLCBxK/f2pdDAmd0OklyTlKYqZQ3iUjf8PDwHskA1hTOnlWIyJmA75dOTm2WlwMPWGiJScS4iFxoWXaXAzlCVS/yPlYuhIyAltJ3grO6NxqNxuGpIUseLIMxne07YH0FO1v8ZFlWDyEosA54HtgxtT1RFpGzPMCWGB8DDpjomCtYFqOqTyfpWdmArX6umbHTqPCOo6qtiktsBlekXCGEE2yJffQx1RotGehW4KUpXASsHAdF5FGHBHYDvo1AKw0wzshsuwFWBVXVo93mJBkBC/PBAier3dDIyMj2dook7e70OuCeRL/VzOX0S1ut1g7ebysJzKsYZjYlocGcbbT0y40BVyZO/wAEuD6Z4UJAVX2yEFDE7BRn1InTUTsW48mTOlucQNqSf5H0qXTGG6CthNuZJONnnjptW07TexF5MQH5Mf3CgVuTura20noReaIjoBHHJ45SY8CbHhIsLsY45v3m+ehjIuz6Mvl4KWCEfDgdWUn5GktcrZ8FXQO3zDmEsJ9DxmtoGZzVL6sEaIbtrQX4pATOna61c9WB2kng9gq2lvqqtLPRVhdCOBT4uMT4NyIyaAY8WOeNxYS47BFqSdeA7sjuwSWgY/YsEk+RV4FVwLn1ev1IVQ3xg7Gw47M+SarqY1MGzIF+1MHR+uQ+4hB20fdyoYyn05b97P6mLO05BOgEWghSBDutgD6yCPphkdMu9Y94RHD70ybjHv2yS6D8LC/rGaCP1DISu5xPEfSZvr6+nd1WT2W8cpaFp/wMrkivpj0FdOPxueODijO6fMYBHTSeTO+XgNoR2/5O4oZ6LSPoe+1AReTBXvuvbN/SsvS5zoBV9b7KBmaqYbPZ3EdErgUW25t4r/3+B3zY+cc1E9WjAAAAAElFTkSuQmCC"/>
+                            </defs>
+                        </svg>
+                        <div class="header__offer-text">All New<br><div>Deals</div></div>
+                    </div>
+
+                </div>
+            </div>            
+            <div class="header__lower">
+                <div class="container">
+                    <div class = "header__dropdown">
+
+                        <div class="header__dropdown-block">
+                            <h3>Shop for</h3>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="8" height="5" viewBox="0 0 8 5" fill="none">
+                                <path d="M0 -3.49691e-07L6.4 -6.99382e-08L8 0L4 5L0 -3.49691e-07Z" fill="#3B4D6A"/>
+                                </svg>
+                        </div>
+
+                        <ul class="header__dropdown-menu">
+                            <li><a href="#">Sports & Outdoors</a></li>
+                            <li><a href="#">Cameras & Photo</a></li>
+                            <li><a href="#">Jewelry & Watches</a></li>
+                            <li><a href="#">Industrial & Scientific</a></li>
+                            <li><a href="#">Electronics</a></li>
+                            <li><a href="#">Tools & Home Improvement</a></li>
+                            <li><a href="#">Clothing, Shoes & Accessories</a></li>
+                            <li><a href="#">Everything Else</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="header__search">
+                        <form>
+                        <input type="search" class = "header__search-input" id="header-search-input" placeholder="Click to search">
+                        <button type="submit">Submit</button>
+                        </form>
+                    </div>
+
+                    <div class="header__icons">
+                        <div class="header__icons-item">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="44" height="44" viewBox="0 0 44 44" fill="none">
+                                <path d="M33.8125 32.7188C33.8125 33.3228 33.3228 33.8125 32.7188 33.8125H31.625V34.9062C31.625 35.5103 31.1353 36 30.5312 36C29.9272 36 29.4375 35.5103 29.4375 34.9062V33.8125H28.3438C27.7397 33.8125 27.25 33.3228 27.25 32.7188C27.25 32.1147 27.7397 31.625 28.3438 31.625H29.4375V30.5312C29.4375 29.9272 29.9272 29.4375 30.5312 29.4375C31.1353 29.4375 31.625 29.9272 31.625 30.5312V31.625H32.7188C33.3228 31.625 33.8125 32.1147 33.8125 32.7188ZM33.8125 15.6562V26.1562C33.8125 26.7603 33.3228 27.25 32.7188 27.25C32.1147 27.25 31.625 26.7603 31.625 26.1562V16.75H29.4375V20.0312C29.4375 20.6353 28.9478 21.125 28.3438 21.125C27.7397 21.125 27.25 20.6353 27.25 20.0312V16.75H16.75V20.0312C16.75 20.6353 16.2603 21.125 15.6562 21.125C15.0522 21.125 14.5625 20.6353 14.5625 20.0312V16.75H12.375V33.8125H23.9688C24.5728 33.8125 25.0625 34.3022 25.0625 34.9062C25.0625 35.5103 24.5728 36 23.9688 36H11.2812C10.6772 36 10.1875 35.5103 10.1875 34.9062V15.6562C10.1875 15.0522 10.6772 14.5625 11.2812 14.5625H14.6142C15.0487 10.8724 18.195 8 22 8C25.805 8 28.9513 10.8724 29.3858 14.5625H32.7188C33.3228 14.5625 33.8125 15.0522 33.8125 15.6562ZM27.1767 14.5625C26.7589 12.0827 24.5967 10.1875 22 10.1875C19.4033 10.1875 17.2411 12.0827 16.8233 14.5625H27.1767Z" fill="#1C2F50"/>
+                            </svg>
+                            <p>Your cart</p>
+                        </div>
+
+                        <div class="header__icons-item">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="44" height="44" viewBox="0 0 44 44" fill="none">
+                                <g clip-path="url(#clip0_2_239)">
+                                <path d="M22 8C14.2626 8 8 14.2615 8 22C8 24.4556 8.64044 26.8539 9.8566 28.9692L8.05276 34.5709C7.92694 34.9614 8.03033 35.3895 8.32043 35.6796C8.60776 35.9669 9.03479 36.0741 9.42914 35.9472L15.0308 34.1434C17.1461 35.3596 19.5444 36 22 36C29.7374 36 36 29.7385 36 22C36 14.2626 29.7385 8 22 8ZM22 33.8125C19.782 33.8125 17.6199 33.1936 15.7475 32.0228C15.4781 31.8544 15.1436 31.8089 14.8323 31.9091L10.7886 33.2114L12.0909 29.1677C12.1896 28.8609 12.1479 28.526 11.977 28.2525C10.8064 26.3801 10.1875 24.218 10.1875 22C10.1875 15.4866 15.4866 10.1875 22 10.1875C28.5134 10.1875 33.8125 15.4866 33.8125 22C33.8125 28.5134 28.5134 33.8125 22 33.8125ZM23.3672 22C23.3672 22.7549 22.7552 23.3672 22 23.3672C21.2448 23.3672 20.6328 22.7549 20.6328 22C20.6328 21.2448 21.2448 20.6328 22 20.6328C22.7552 20.6328 23.3672 21.2448 23.3672 22ZM28.8359 22C28.8359 22.7549 28.2239 23.3672 27.4688 23.3672C26.7136 23.3672 26.1016 22.7549 26.1016 22C26.1016 21.2448 26.7136 20.6328 27.4688 20.6328C28.2239 20.6328 28.8359 21.2448 28.8359 22ZM17.8984 22C17.8984 22.7549 17.2864 23.3672 16.5312 23.3672C15.7763 23.3672 15.1641 22.7549 15.1641 22C15.1641 21.2448 15.7763 20.6328 16.5312 20.6328C17.2864 20.6328 17.8984 21.2448 17.8984 22Z" fill="#1C2F50"/>
+                                </g>
+                                <defs>
+                                <clipPath id="clip0_2_239">
+                                <rect width="28" height="28" fill="white" transform="translate(8 8)"/>
+                                </clipPath>
+                                </defs>
+                            </svg>
+                            <p>Live chat</p>
+                        </div>
+
+                        <div class="header__icons-item">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="44" height="44" viewBox="0 0 44 44" fill="none">
+                                <g clip-path="url(#clip0_2_240)">
+                                <path d="M31.9416 11.668C29.5761 9.30248 26.431 7.99987 23.0858 8C22.5377 8 22.0935 8.4443 22.0935 8.99234C22.0935 9.54038 22.5378 9.98468 23.0858 9.98468C25.9009 9.98455 28.5476 11.0808 30.5382 13.0714C32.529 15.062 33.6252 17.7088 33.625 20.524C33.625 21.072 34.0692 21.5163 34.6174 21.5163C35.1654 21.5163 35.6097 21.072 35.6097 20.5241C35.6098 17.1786 34.3072 14.0334 31.9416 11.668Z" fill="#1C2F50"/>
+                                <path d="M27.8595 20.5241C27.8595 21.0721 28.3038 21.5164 28.852 21.5163C29.4 21.5163 29.8442 21.072 29.8442 20.524C29.8439 16.7981 26.8121 13.7664 23.086 13.7659C23.0858 13.7659 23.086 13.7659 23.0858 13.7659C22.5378 13.7659 22.0936 14.21 22.0935 14.7581C22.0935 15.3061 22.5377 15.7504 23.0857 15.7505C25.7178 15.7509 27.8593 17.8923 27.8595 20.5241Z" fill="#1C2F50"/>
+                                <path d="M25.6637 25.5837C24.1511 25.5054 23.3806 26.6303 23.011 27.1707C22.7015 27.6231 22.8174 28.2406 23.2698 28.55C23.7222 28.8595 24.3397 28.7436 24.6492 28.2912C25.0858 27.6528 25.2836 27.5524 25.5519 27.5651C26.4108 27.6661 29.7933 30.1448 30.132 30.9199C30.217 31.1481 30.2138 31.3719 30.1226 31.644C29.7675 32.698 29.1797 33.4387 28.4223 33.7859C27.7028 34.1157 26.8207 34.0858 25.8719 33.6998C22.3289 32.2557 19.2336 30.2405 16.6721 27.7099C16.671 27.7088 16.6699 27.7079 16.669 27.7068C14.1437 25.1478 12.1322 22.0564 10.6905 18.5189C10.3043 17.5693 10.2744 16.6871 10.6042 15.9677C10.9514 15.2104 11.6921 14.6225 12.7452 14.2678C13.0183 14.1762 13.2416 14.1733 13.4677 14.2574C14.2456 14.5974 16.7242 17.9798 16.8242 18.829C16.8385 19.1073 16.7373 19.305 16.0994 19.7408C15.6469 20.0499 15.5306 20.6674 15.8398 21.1199C16.1489 21.5724 16.7663 21.6886 17.2189 21.3795C17.7595 21.0104 18.8842 20.2419 18.8061 18.7242C18.7201 17.1388 15.6362 12.9404 14.1626 12.3986C13.5073 12.1543 12.8179 12.1501 12.113 12.3867C10.5268 12.9208 9.38128 13.8732 8.80016 15.1408C8.23651 16.3705 8.25437 17.7972 8.85242 19.2674C10.3953 23.0531 12.554 26.3656 15.2684 29.113C15.275 29.1198 15.2817 29.1264 15.2886 29.1329C18.0341 31.8422 21.3427 33.9969 25.1234 35.538C25.8805 35.8459 26.626 36 27.3391 36C28.0104 36 28.6532 35.8635 29.2494 35.5901C30.5171 35.0091 31.4693 33.8637 32.0039 32.2765C32.2399 31.5728 32.2361 30.8838 31.9937 30.2315C31.45 28.7539 27.2516 25.67 25.6637 25.5837Z" fill="#1C2F50"/>
+                                </g>
+                                <defs>
+                                <clipPath id="clip0_2_240">
+                                <rect width="44" height="44" fill="white" transform="translate(8 8)"/>
+                                </clipPath>
+                                </defs>
+                            </svg>
+                            <p>Contacts</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </header>
+    <!-- MAIN SECTION -->
+    <main class="main" id="main">
+        <!-- BANNER SECTION -->
+        <section class="banner">
+            <div class="banner__img">
+                <div class="banner__text">
+                    <p>Get The Best</p>
+                    <h1>Perfomance<br>Glasses</h1>
+                    <p>Shop Now</p> 
+                </div>
+
+                <div class="banner__switcher">
+                    <div class="banner__switcher-btn" id ="prev">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="9" height="14" viewBox="0 0 9 14" fill="none">
+                        <path d="M9 3.24249e-05L9 11.2L9 14L-3.41715e-07 7.00003L9 3.24249e-05Z" fill="white"/>
+                        </svg>
+                    </div>
+                    <div class="banner__switcher-btns">
+                        <span class = "clicker">1</span>
+                        <span class = "clicker">2</span>
+                        <span class = "clicker">3</span>
+                        <span class = "clicker">4</span>
+                        <span class = "clicker">5</span>
+                        <span class = "clicker">6</span>
+                    </div>
+                    <div class="banner__switcher-btn" id="next">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="9" height="14" viewBox="0 0 9 14" fill="none">
+                            <path d="M-2.44784e-06 14L-4.89567e-07 2.8L0 0L9 7L-2.44784e-06 14Z" fill="white"/>
+                            </svg>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+        <!-- PRODUCTS SECTION -->
+        <section class="products">
+            <div class="container grid">
+                <div class="products__header">
+                    <div class="products__btns">
+                        <button>
+                            <a href="https://www.shoptics.com/">New Items</a>
+                        </button>
+                        <button>
+                            <a href="https://www.shoptics.com/">Popular Items</a>
+                        </button>
+                        <button>
+                            <a href="https://www.shoptics.com/">Top Rated</a>
+                        </button>
+                    </div>
+                </div>
+                
+                <div class="products__sidebar">
+                    <nav class="products__navigation">
+                        <h3>Shop by Category</h3>
+                        <ul class="products__navigation-list" id="category">
+                            <li><a href="#">Men</a></li>
+                            <li><a href="#">Women</a></li>
+                            <li><a href="#">Riflescopes</a></li>
+                            <li><a href="#">Other popular stuff</a></li>
+                        </ul>
+
+                        <h3>Shop by Brand</h3>
+                        <ul class="products__navigation-list" id="brands">
+                            <li><a href="#">Barska</a></li>
+                            <li><a href="#">Trijicon</a></li>
+                            <li><a href="#">Safariland</a></li>
+                            <li><a href="#">Bushnell</a></li>
+                        </ul>
+
+                        <h3>Shop by Department</h3>
+                        <ul class="products__navigation-list">
+                            <li><a href="#">Sports & Outdoors</a></li>
+                            <li><a href="#">Electronics</a></li>
+                            <li><a href="#">Jewelry & Watches</a></li>
+                            <li><a href="#">Industrial & Scientific</a></li>
+                        </ul>
+                    </nav>
+                    <div class="products__add">
+                        <img src="assets/img/add.png" alt="add">
+                    </div>
+                </div>
+
+                <div class="products__item">
+                    <div class="products__item-img">
+                        <img src="assets/img/item.png" alt="Product">
+                    </div>
+                    <div class="products__item-descr">
+                        SOG Specialty Knives & Tools Voodoo Hawk TomahawkSOG Specialty Knives & Tools Voodoo Hawk Tomahawk
+                    </div>
+                    <span>$9.99</span>
+                    <h3>New Product</h3>
+                </div>
+                <div class="products__item">
+                    <div class="products__item-img">
+                        <img src="assets/img/item.png" alt="Product">
+                    </div>
+                    <div class="products__item-descr">
+                        SOG Specialty Knives & Tools Voodoo Hawk TomahawkSOG Specialty Knives & Tools Voodoo Hawk Tomahawk
+                    </div>
+                    <span>$9.99</span>
+                    <h3>New Product</h3>
+                </div>
+                
+                <div class="products__item">
+                    <div class="products__item-img">
+                        <img src="assets/img/item.png" alt="Product">
+                    </div>
+                    <div class="products__item-descr">
+                        SOG Specialty Knives & Tools Voodoo Hawk TomahawkSOG Specialty Knives & Tools Voodoo Hawk Tomahawk
+                    </div>
+                    <span>$9.99</span>
+                    <h3>New Product</h3>
+                </div>
+                
+                <div class="products__item">
+                    <div class="products__item-img">
+                        <img src="assets/img/item.png" alt="Product">
+                    </div>
+                    <div class="products__item-descr">
+                        SOG Specialty Knives & Tools Voodoo Hawk TomahawkSOG Specialty Knives & Tools Voodoo Hawk Tomahawk
+                    </div>
+                    <span>$9.99</span>
+                    <h3>New Product</h3>
+                </div>
+                
+                <div class="products__item">
+                    <div class="products__item-img">
+                        <img src="assets/img/item.png" alt="Product">
+                    </div>
+                    <div class="products__item-descr">
+                        SOG Specialty Knives & Tools Voodoo Hawk TomahawkSOG Specialty Knives & Tools Voodoo Hawk Tomahawk
+                    </div>
+                    <span>$9.99</span>
+                    <h3>New Product</h3>
+                </div>
+                
+                <div class="products__item">
+                    <div class="products__item-img">
+                        <img src="assets/img/item.png" alt="Product">
+                    </div>
+                    <div class="products__item-descr">
+                        SOG Specialty Knives & Tools Voodoo Hawk TomahawkSOG Specialty Knives & Tools Voodoo Hawk Tomahawk
+                    </div>
+                    <span>$9.99</span>
+                    <h3>New Product</h3>
+                </div>
+                
+                <div class="products__item">
+                    <div class="products__item-img">
+                        <img src="assets/img/item.png" alt="Product">
+                    </div>
+                    <div class="products__item-descr">
+                        SOG Specialty Knives & Tools Voodoo Hawk TomahawkSOG Specialty Knives & Tools Voodoo Hawk Tomahawk
+                    </div>
+                    <span>$9.99</span>
+                    <h3>New Product</h3>
+                </div>
+                
+                <div class="products__item">
+                    <div class="products__item-img">
+                        <img src="assets/img/item.png" alt="Product">
+                    </div>
+                    <div class="products__item-descr">
+                        SOG Specialty Knives & Tools Voodoo Hawk TomahawkSOG Specialty Knives & Tools Voodoo Hawk Tomahawk
+                    </div>
+                    <span>$9.99</span>
+                    <h3>New Product</h3>
+                </div>
+                
+                <div class="products__item">
+                    <div class="products__item-img">
+                        <img src="assets/img/item.png" alt="Product">
+                    </div>
+                    <div class="products__item-descr">
+                        SOG Specialty Knives & Tools Voodoo Hawk TomahawkSOG Specialty Knives & Tools Voodoo Hawk Tomahawk
+                    </div>
+                    <span>$9.99</span>
+                    <h3>New Product</h3>
+                </div>
+                
+                <div class="products__item">
+                    <div class="products__item-img">
+                        <img src="assets/img/item.png" alt="Product">
+                    </div>
+                    <div class="products__item-descr">
+                        SOG Specialty Knives & Tools Voodoo Hawk TomahawkSOG Specialty Knives & Tools Voodoo Hawk Tomahawk
+                    </div>
+                    <span>$9.99</span>
+                    <h3>New Product</h3>
+                </div>
+                
+                <div class="products__item">
+                    <div class="products__item-img">
+                        <img src="assets/img/item.png" alt="Product">
+                    </div>
+                    <div class="products__item-descr">
+                        SOG Specialty Knives & Tools Voodoo Hawk TomahawkSOG Specialty Knives & Tools Voodoo Hawk Tomahawk
+                    </div>
+                    <span>$9.99</span>
+                    <h3>New Product</h3>
+                </div>
+                
+                <div class="products__item">
+                    <div class="products__item-img">
+                        <img src="assets/img/item.png" alt="Product">
+                    </div>
+                    <div class="products__item-descr">
+                        SOG Specialty Knives & Tools Voodoo Hawk TomahawkSOG Specialty Knives & Tools Voodoo Hawk Tomahawk
+                    </div>
+                    <span>$9.99</span>
+                    <h3>New Product</h3>
+                </div>
+                
+                <div class="products__item">
+                    <div class="products__item-img">
+                        <img src="assets/img/item.png" alt="Product">
+                    </div>
+                    <div class="products__item-descr">
+                        SOG Specialty Knives & Tools Voodoo Hawk TomahawkSOG Specialty Knives & Tools Voodoo Hawk Tomahawk
+                    </div>
+                    <span>$9.99</span>
+                    <h3>New Product</h3>
+                </div>
+                
+                <div class="products__item">
+                    <div class="products__item-img">
+                        <img src="assets/img/item.png" alt="Product">
+                    </div>
+                    <div class="products__item-descr">
+                        SOG Specialty Knives & Tools Voodoo Hawk TomahawkSOG Specialty Knives & Tools Voodoo Hawk Tomahawk
+                    </div>
+                    <span>$9.99</span>
+                    <h3>New Product</h3>
+                </div>
+                
+                <div class="products__item">
+                    <div class="products__item-img">
+                        <img src="assets/img/item.png" alt="Product">
+                    </div>
+                    <div class="products__item-descr">
+                        SOG Specialty Knives & Tools Voodoo Hawk TomahawkSOG Specialty Knives & Tools Voodoo Hawk Tomahawk
+                    </div>
+                    <span>$9.99</span>
+                    <h3>New Product</h3>
+                </div>
+                
+                <div class="products__item">
+                    <div class="products__item-img">
+                        <img src="assets/img/item.png" alt="Product">
+                    </div>
+                    <div class="products__item-descr">
+                        SOG Specialty Knives & Tools Voodoo Hawk TomahawkSOG Specialty Knives & Tools Voodoo Hawk Tomahawk
+                    </div>
+                    <span>$9.99</span>
+                    <h3>New Product</h3>
+                </div>
+                
+                
+            </div>
+        </section>
+    </main>
+    <!-- FOOTER -->
+    <footer class="footer" id="footer">
+        <div class="footer__upper">
+            <div class="container">
+                <div class="footer__newsletter">
+                    <form>
+                        <label for="footer-newsletter-form">Sign up for our newsletter</label>
+                        <input type="email" class = "footer__newsletter-form" id="footer-newsletter-form" placeholder=" ">
+                        <button type="submit">Submit</button>
+                    </form>
+
+                </div>
+
+                <div class="footer__wrapper">
+                    <nav class="footer__navigation">
+                        <h3>Learn</h3>
+                        <ul id="learn">
+                            <li><a href="#">About us</a></li>
+                            <li><a href="#">Policies</a></li>
+                        </ul>  
+                    </nav>
+        
+                    <nav class="footer__navigation">
+                        <h3>Contact information</h3>
+                        <ul>
+                            <li><a href="#">Toll-Free: 123-456-7890</a></li>
+                            <li><a href="#"> Intl.: 123-456-7890</a></li>
+                            <li><a href="#">Fax: 123-456-7890</a></li>
+                            <li><a href="#">Email: email@xxx.com</a></li>
+                        </ul>
+                    </nav>
+
+                    <div class="footer__navigation">
+                        <h3>Hours of Operation</h3>
+                        <span>7AM - 8PM CST Mon - Fri</span>
+                        <span>9AM - 5PM CST Sat - Sun</span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="footer__lower">
+            <div class="container">
+                <p>© copyright shoptics 2004-2013</p>
+            </div>
+        </div>
+    </footer>
+    <script src = "assets/js/app.js"></script>
+</body>
+</html>

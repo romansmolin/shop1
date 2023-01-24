@@ -1,0 +1,22 @@
+@import 'base/header';
+@import 'base/banner';
+@import 'base/products';
+@import 'base/footer';
+
+
+*{
+    font-family: Verdana,Geneva,sans-serif;
+    box-sizing:border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+.container{
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.grid{
+    display: grid;
+}

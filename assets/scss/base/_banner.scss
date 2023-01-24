@@ -1,0 +1,92 @@
+.banner{
+    text-align: center;
+    text-transform: uppercase;
+    &__img{
+        
+        background:url('../img/1.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 100%;
+        height: 473px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items:center;
+        transition: .5s ease;
+        
+        
+    }
+
+    &__text{
+        color:#3B4D6A;
+        p:nth-child(1){
+            font-weight: 700;
+            font-size: 2.25rem;
+            line-height: 41px;
+            margin-bottom: 16px;
+        }
+
+        p:last-child{
+            font-weight: 700;
+            font-size: 1.25rem;
+            line-height: 41px;
+            margin-bottom: 35px;
+        }
+
+        h1{
+            font-size: 3rem;
+            margin-bottom: 24px;
+        }
+    }
+
+    &__switcher{
+        display: flex;
+        justify-content: space-between;
+        align-items:center;
+        width: 350px;
+        &-btn{
+            
+            display: flex;
+            justify-content: center;
+            align-items:center;
+            width: 39px;
+            height: 33px;
+            background-color:#1C2F50;
+            border-radius:4px;
+            opacity: 0.5;
+            cursor: pointer;
+        }
+
+        &-btns{
+            display: flex;
+            justify-content: space-around;
+            align-items:center;
+            width: 253px;
+            height: 33px;
+            background-color:#1C2F50;
+            border-radius:4px;
+            opacity: 0.5;
+            span{
+                display: flex;
+                justify-content: center;
+                align-items:center;
+                transition: .3s ease-out;
+                width: 26px;
+                height: 26px;
+                border-radius:50%;
+                cursor: pointer;
+                color:#fff;
+            }
+            span:hover{
+                background-color:#fff;
+                color:#3B4D6A;
+            }
+
+            .active{
+                background-color:#fff;
+                color:#3B4D6A;
+            }
+        }
+    }
+    
+}
